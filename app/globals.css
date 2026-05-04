@@ -1,26 +1,97 @@
 @import "tailwindcss";
 
+/* 🎨 SAFEER SAFA AGRO PALETTE */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #1B1B1B;
+  /* warm almond gold */
+
+  --dark: #615B5D;
+  /* granite gray */
+  --primary: #A02D27;
+  /* spice red */
+  --secondary: #896C64;
+  /* earthy brown */
+  --accent: #6C5547;
+  /* deep wood */
+
+  --text-main: #2A1A17;
+  --text-muted: #6C5547;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* 🌍 GLOBAL */
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-main);
+}
+
+/* 💎 CARD */
+.card {
+  background: white;
+  border-radius: 14px;
+  border: 1px solid #e6d3c6;
+  padding: 20px;
+}
+
+/* ✨ HOVER */
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(160, 45, 39, 0.15);
+}
+
+/* 🔘 PRIMARY BUTTON */
+.btn {
+  background: var(--primary);
+  color: white;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background: #7c201c;
+}
+
+/* 🔘 DARK BUTTON */
+.btn-dark {
+  background: var(--dark);
+  color: white;
+}
+
+.btn-dark:hover {
+  background: #3f3a3c;
+}
+
+/* 🔘 OUTLINE */
+.btn-outline {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* 🧾 INPUT */
+.input4 {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+
+  background: #ffffff;
+  border: 1px solid #e6d3c6;
+
+  font-size: 14px;
+  color: var(--text-main);
+
+  outline: none;
+}
+
+/* focus */
+.input4:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(160, 45, 39, 0.2);
+}
+
+/* ✨ SMOOTH */
+* {
+  transition: all 0.2s ease;
 }
