@@ -57,7 +57,7 @@ export default function CheckoutPage() {
 
                     <button
                         onClick={() => router.push("/shop")}
-                        className="px-6 py-3 bg-[#D97706] text-white rounded-md"
+                        className="px-6 py-3 bg-[#3bb471] text-white rounded-md"
                     >
                         Browse Products
                     </button>
@@ -144,7 +144,7 @@ export default function CheckoutPage() {
                         {/* CTA */}
                         <button
                             onClick={handleSubmit}
-                            className="w-full bg-[#D97706] text-white py-3 rounded-md hover:opacity-90 transition"
+                            className="w-full bg-[#3bb471] text-white py-3 rounded-md hover:opacity-90 transition"
                         >
                             Place Order
                         </button>

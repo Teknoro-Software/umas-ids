@@ -49,10 +49,10 @@ export default function Services() {
                     >
 
                         {/* CARD */}
-                        <div className="h-full bg-[#262626] border border-[#333] rounded-xl p-8 text-center hover:border-[#D97706] transition duration-300">
+                        <div className="h-full bg-[#262626] border border-[#333] rounded-xl p-8 text-center hover:border-[#3bb471] transition duration-300">
 
                             {/* ICON */}
-                            <div className="mb-5 text-[#D97706] flex justify-center group-hover:scale-110 transition">
+                            <div className="mb-5 text-[#3bb471] flex justify-center group-hover:scale-110 transition">
                                 <service.icon className="w-8 h-8" />
                             </div>
 
@@ -67,7 +67,7 @@ export default function Services() {
                             </p>
 
                             {/* CTA */}
-                            <p className="mt-5 text-[#D97706] text-sm opacity-0 group-hover:opacity-100 transition">
+                            <p className="mt-5 text-[#3bb471] text-sm opacity-0 group-hover:opacity-100 transition">
                                 Learn More →
                             </p>
 

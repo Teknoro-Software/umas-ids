@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "UMA'S IDS",
-  description: "IDLIYUM DOSAYUM PINNE SAMBHARUM",
+  title: "SHIFMAR",
+  description: "FOODS PRIVATE LIMITED",
 };
 
 export default function RootLayout({

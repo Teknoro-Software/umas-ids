@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function Footer() {
     const router = useRouter();
@@ -12,7 +13,7 @@ export default function Footer() {
         <footer className="bg-[#1B1B1B] text-white mt-20">
 
             {/* 🔔 CTA STRIP */}
-            <div className="mx-6 md:mx-20 -mt-16 mb-14 bg-[#D97706] rounded-xl px-6 md:px-12 py-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-lg">
+            <div className="mx-6 md:mx-20 -mt-16 mb-14 bg-[#3bb471] rounded-xl px-6 md:px-12 py-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-lg">
 
                 <div>
                     <h2 className="text-2xl md:text-3xl font-semibold">
@@ -32,15 +33,19 @@ export default function Footer() {
             </div>
 
             {/* 🧊 MAIN FOOTER */}
-            <div className="px-6 md:px-20 py-5 border-t border-white/10">
+            <div className="px-6 md:px-20 py-5 border-t border-white/10 ">
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
 
                     {/* BRAND */}
                     <div>
-                        <h3 className="text-xl font-semibold">
-                            UMA’S IDS
-                        </h3>
+                        <Image
+                                                src="/logo.png"
+                                                alt="SHIFAS FOODS"
+                                                width={160}
+                                                height={50}
+                                                className="relative object-contain h-10 w-auto brightness-110"
+                                            />
                         <p className="mt-3 text-sm text-white/70 leading-relaxed">
                             Homemade spice powders and traditional food products made with
                             authentic recipes and fresh ingredients. We also supply bulk
@@ -50,7 +55,7 @@ export default function Footer() {
 
                     {/* LINKS */}
                     <div>
-                        <h4 className="font-medium text-[#D97706] mb-3">
+                        <h4 className="font-medium text-[#3bb471] mb-3">
                             Quick Links
                         </h4>
                         <ul className="space-y-2 text-sm text-white/70">
@@ -62,7 +67,7 @@ export default function Footer() {
 
                     {/* PRODUCTS */}
                     <div>
-                        <h4 className="font-medium text-[#D97706] mb-3">
+                        <h4 className="font-medium text-[#3bb471] mb-3">
                             Products
                         </h4>
                         <ul className="space-y-2 text-sm text-white/70">
@@ -77,7 +82,7 @@ export default function Footer() {
 
                     {/* CONTACT / SOCIAL */}
                     <div>
-                        <h4 className="font-medium text-[#D97706] mb-3">
+                        <h4 className="font-medium text-[#3bb471] mb-3">
                             Connect
                         </h4>
 
@@ -103,7 +108,7 @@ export default function Footer() {
 
                 {/* BOTTOM */}
                 <div className="border-t border-white/10 mt-10 pt-6 text-center text-sm text-white/50">
-                    © 2026 UMA’S IDS. All rights reserved.
+                    © 2026 SHIFMAR FOODS PRIVATE LIMITED. All rights reserved.
                 </div>
 
             </div>

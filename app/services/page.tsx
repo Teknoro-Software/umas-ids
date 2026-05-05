@@ -96,7 +96,7 @@ export default function ServicesPage() {
               className="group"
             >
 
-              <div className="bg-[#262626] border border-[#333] rounded-xl overflow-hidden hover:border-[#D97706] transition">
+              <div className="bg-[#262626] border border-[#333] rounded-xl overflow-hidden hover:border-[#3bb471] transition">
 
                 {/* IMAGE */}
                 <div className="overflow-hidden">
@@ -109,7 +109,7 @@ export default function ServicesPage() {
                 {/* CONTENT */}
                 <div className="p-6">
 
-                  <div className="mb-3 text-[#D97706]">
+                  <div className="mb-3 text-[#3bb471]">
                     <item.icon className="w-6 h-6" />
                   </div>
 
@@ -145,14 +145,14 @@ export default function ServicesPage() {
           </h2>
 
           <p className="mt-4 text-gray-400 text-sm leading-relaxed">
-            UMA’S IDS combines traditional homemade preparation methods with
+            SHIFMAR FOODS combines traditional homemade preparation methods with
             modern packaging and logistics. Whether for local customers or
             international markets, we ensure consistent quality and taste.
           </p>
 
           <button
             onClick={() => router.push("/contact")}
-            className="mt-6 bg-[#D97706] text-white px-6 py-3 text-sm rounded-md hover:opacity-90 transition"
+            className="mt-6 bg-[#3bb471] text-white px-6 py-3 text-sm rounded-md hover:opacity-90 transition"
           >
             Contact Us
           </button>
@@ -172,7 +172,7 @@ export default function ServicesPage() {
             key={i}
             whileHover={{ scale: 1.05 }}
             className={`p-8 text-center rounded-lg ${i === 1
-                ? "bg-[#D97706] text-white"
+              ? "bg-[#3bb471] text-white"
                 : "bg-[#262626] border border-[#333]"
               }`}
           >

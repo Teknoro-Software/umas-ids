@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useCart } from "@/context/CartContext";
 import { ShoppingCart, Menu, X } from "lucide-react";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const links = [
@@ -17,10 +18,11 @@ export default function Navbar() {
     const pathname = usePathname();
     const router = useRouter();
     const { cart } = useCart();
+
     const [open, setOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
-    // 🔥 Detect scroll
+    // 🔥 Scroll detection
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 20);
@@ -30,21 +32,25 @@ export default function Navbar() {
     }, []);
 
     return (
-        <nav
-            className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled
-                    ? "bg-black/80 backdrop-blur-lg shadow-lg"
-                    : "bg-transparent"
-                }`}
-        >
+        <nav className="fixed top-0 w-full z-50 bg-gradient-to-r from-[#0F2A1D] via-[#14532d] to-[#0F2A1D] backdrop-blur-lg shadow-md">
             <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-                {/* 🔥 LOGO */}
-                <h1
+                {/* 🌿 LOGO */}
+                <div
                     onClick={() => router.push("/")}
-                    className="text-lg md:text-xl font-semibold text-white cursor-pointer tracking-wide"
+                    className="cursor-pointer flex items-center relative"
                 >
-                    UMA&apos;S <span className="text-[#F4C47C]">IDS</span>
-                </h1>
+                    {/* subtle glow */}
+                    <div className="absolute inset-0 bg-green-500/10 blur-xl rounded-full"></div>
+
+                    <Image
+                        src="/logo.png"
+                        alt="SHIFAS FOODS"
+                        width={160}
+                        height={50}
+                        className="relative object-contain h-10 w-auto brightness-110"
+                    />
+                </div>
 
                 {/* DESKTOP MENU */}
                 <div className="hidden md:flex gap-8 text-sm text-gray-300">
@@ -65,16 +71,15 @@ export default function Navbar() {
                                     {link.name}
                                 </span>
 
-                                {/* 🔥 Animated underline */}
+                                {/* underline */}
                                 <span
-                                    className={`absolute left-0 -bottom-1 h-[2px] bg-[#D97706] transition-all duration-300 ${active
-                                            ? "w-full"
-                                            : "w-0 group-hover:w-full"
+                                    className={`absolute left-0 -bottom-1 h-[2px] bg-[#3bb471] transition-all duration-300 ${active ? "w-full" : "w-0 group-hover:w-full"
                                         }`}
                                 />
                             </Link>
                         );
                     })}
+
                 </div>
 
                 {/* RIGHT */}
@@ -88,7 +93,7 @@ export default function Navbar() {
                         <ShoppingCart className="w-5 h-5 text-white" />
 
                         {cart.length > 0 && (
-                            <span className="absolute -top-2 -right-2 bg-[#D97706] text-white text-xs px-1.5 rounded-full">
+                            <span className="absolute -top-2 -right-2 bg-green-500 text-white text-xs px-1.5 rounded-full">
                                 {cart.length}
                             </span>
                         )}
@@ -97,7 +102,7 @@ export default function Navbar() {
                     {/* CTA */}
                     <button
                         onClick={() => router.push("/contact")}
-                        className="hidden md:block bg-[#D97706] text-white px-5 py-2 text-sm rounded-full hover:scale-105 transition"
+                        className="hidden md:block bg-[#3bb471] text-white px-5 py-2 text-sm rounded-full hover:scale-105 transition"
                     >
                         Get Quote
                     </button>
@@ -110,12 +115,13 @@ export default function Navbar() {
                             <Menu className="text-white" />
                         )}
                     </button>
+
                 </div>
             </div>
 
-            {/* MOBILE MENU */}
+            {/* 📱 MOBILE MENU */}
             {open && (
-                <div className="md:hidden bg-black/90 backdrop-blur-lg border-t border-white/10 p-6 flex flex-col gap-6 text-sm text-gray-300">
+                <div className="md:hidden bg-[#0F2A1D]/95 backdrop-blur-lg border-t border-white/10 p-6 flex flex-col gap-6 text-sm text-gray-300">
 
                     {links.map((link) => (
                         <Link
@@ -133,10 +139,11 @@ export default function Navbar() {
                             router.push("/contact");
                             setOpen(false);
                         }}
-                        className="mt-4 bg-[#A02D27] text-white py-3 rounded-full"
+                        className="mt-4 bg-[#3bb471] text-white py-3 rounded-full"
                     >
                         Get Quote
                     </button>
+
                 </div>
             )}
         </nav>

@@ -34,7 +34,7 @@ export default function About() {
                 >
 
                     {/* BADGE */}
-                    <p className="text-xs tracking-[0.3em] text-[#D97706] mb-4">
+                    <p className="text-xs tracking-[0.3em] text-[#3bb471] mb-4">
                         ABOUT US
                     </p>
 
@@ -46,7 +46,7 @@ export default function About() {
 
                     {/* TEXT */}
                     <p className="mt-6 text-gray-400 text-sm md:text-base leading-relaxed max-w-md">
-                        UMA’s IDS is a homemade food brand specializing in freshly prepared
+                        SHIFMAR FOODS is a homemade food brand specializing in freshly prepared
                         spice powders and traditional essentials like sambar powder, chutney
                         powder, chilli powder, turmeric, and more. Every product is made with
                         carefully selected ingredients, ensuring authentic taste, purity, and
@@ -65,7 +65,7 @@ export default function About() {
                         <div>✔ No preservatives or additives</div>
                     </div>
 
-                    {/* STATS */}
+                    {/* STATS
                     <div className="flex gap-6 mt-10">
 
                         <div className="bg-[#262626] border border-[#333] px-6 py-4 rounded-lg text-center">
@@ -83,7 +83,7 @@ export default function About() {
                             <p className="text-xs text-gray-400">Daily Prep</p>
                         </div>
 
-                    </div>
+                    </div> */}
 
 
                 </motion.div>

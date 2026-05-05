@@ -76,13 +76,13 @@ export default function ProductsSection() {
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: i * 0.08 }}
-                        className="bg-[#262626] p-6 rounded-xl border border-[#333] hover:border-[#D97706] transition group"
+                        className="bg-[#262626] p-6 rounded-xl border border-[#333] hover:border-[#3bb471] transition group"
                     >
 
                         <div className="flex gap-5 items-center">
 
                             {/* IMAGE */}
-                            <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-[#D97706]/30 group-hover:border-[#D97706] transition">
+                            <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-[#3bb471]/30 group-hover:border-[#3bb471] transition">
                                 <img
                                     src={item.image}
                                     className="w-full h-full object-cover"

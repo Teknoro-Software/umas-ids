@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Check } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 export default function Hero() {
@@ -27,13 +28,8 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     className="text-4xl md:text-6xl font-bold"
                 >
-                    UMA’S IDS
+                    SHIFMAR FOODS PRIVATE LIMITED
                 </motion.h1>
-
-                {/* TAGLINE */}
-                <p className="mt-2 text-sm tracking-wide text-gray-300">
-                    IDLIYUM DOSAYUM PINNE SAMBHARUM
-                </p>
 
                 {/* BADGE */}
                 <div className="mt-6 inline-block border border-white/40 px-4 py-1 text-xs tracking-widest text-gray-200">
@@ -67,7 +63,7 @@ export default function Hero() {
 
                     <button
                         onClick={() => router.push("/shop")}
-                        className="bg-[#f07f3c] px-8 py-3 text-white text-sm hover:scale-[1.05] transition"
+                        className="bg-[#3bb471] px-8 py-3 text-white text-sm hover:scale-[1.05] transition"
                     >
                         View Products
                     </button>
@@ -91,9 +87,9 @@ export default function Hero() {
             {/* BOTTOM STRIP */}
             <div className="absolute bottom-0 w-full bg-black/50 backdrop-blur-md py-4 flex justify-center gap-10 text-white text-xs">
 
-                <span>✔ 100% Veg</span>
-                <span>✔ FSSAI Approved</span>
-                <span>✔ Homemade Quality</span>
+                <span className="flex flex-row items-center"><Check className="mt-1 mr-1" size={15} color="#3bb471" /> 100% Veg</span>
+                <span className="flex flex-row items-center"><Check className="mt-1 mr-1" size={15} color="#3bb471" /> FSSAI Approved</span>
+                <span className="flex flex-row items-center"><Check className="mt-1 mr-1" size={15} color="#3bb471" /> Homemade Quality</span>
 
             </div>
 

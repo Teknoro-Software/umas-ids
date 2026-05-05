@@ -118,7 +118,7 @@ export default function ShopPage() {
           >
 
             {/* CARD */}
-            <div className="bg-[#262626] border border-[#333] rounded-xl overflow-hidden hover:border-[#D97706] transition">
+            <div className="bg-[#262626] border border-[#333] rounded-xl overflow-hidden hover:border-[#3bb471] transition">
 
               {/* IMAGE */}
               <div className="overflow-hidden">
@@ -131,7 +131,7 @@ export default function ShopPage() {
               {/* CONTENT */}
               <div className="p-5">
 
-                <p className="text-[10px] text-[#D97706] uppercase">
+                <p className="text-[10px] text-[#3bb471] uppercase">
                   {product.category}
                 </p>
 
@@ -153,7 +153,7 @@ export default function ShopPage() {
                       image: product.image,
                     })
                   }
-                  className="mt-4 w-full bg-[#D97706] text-white py-2 rounded-md text-sm hover:opacity-90 transition"
+                  className="mt-4 w-full bg-[#3bb471] text-white py-2 rounded-md text-sm hover:opacity-90 transition"
                 >
                   Add to Inquiry
                 </button>
@@ -180,7 +180,7 @@ export default function ShopPage() {
 
         <button
           onClick={() => router.push("/contact")}
-        className="mt-6 bg-[#D97706] px-6 py-3 rounded-md text-sm hover:opacity-90 transition">
+          className="mt-6 bg-[#3bb471] px-6 py-3 rounded-md text-sm hover:opacity-90 transition">
           Contact Now
         </button>
 

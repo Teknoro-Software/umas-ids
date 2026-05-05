@@ -8,7 +8,7 @@ export default function ContactPage() {
     <div className="bg-[#1B1B1B] min-h-screen px-6 md:px-20 py-24 relative overflow-hidden text-white">
 
       {/* 🔥 GLOW */}
-      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#D97706]/10 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#3bb471]/10 rounded-full blur-3xl"></div>
 
       {/* HEADER */}
       <motion.div
@@ -18,7 +18,7 @@ export default function ContactPage() {
       >
         <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
           Let’s Connect for{" "}
-          <span className="text-[#D97706]">Global Export</span>
+          <span className="text-[#3bb471]">Global Export</span>
         </h1>
 
         <p className="mt-6 text-gray-400 text-base">
@@ -39,8 +39,8 @@ export default function ContactPage() {
 
           {/* LOCATION */}
           <div className="flex items-start gap-4">
-            <div className="w-12 h-12 rounded-lg bg-[#D97706]/10 flex items-center justify-center">
-              <MapPin className="w-5 h-5 text-[#D97706]" />
+            <div className="w-12 h-12 rounded-lg bg-[#3bb471]/10 flex items-center justify-center">
+              <MapPin className="w-5 h-5 text-[#3bb471]" />
             </div>
             <div>
               <h4 className="font-medium">Location</h4>
@@ -52,21 +52,21 @@ export default function ContactPage() {
 
           {/* EMAIL */}
           <div className="flex items-start gap-4">
-            <div className="w-12 h-12 rounded-lg bg-[#D97706]/10 flex items-center justify-center">
-              <Mail className="w-5 h-5 text-[#D97706]" />
+            <div className="w-12 h-12 rounded-lg bg-[#3bb471]/10 flex items-center justify-center">
+              <Mail className="w-5 h-5 text-[#3bb471]" />
             </div>
             <div>
               <h4 className="font-medium">Email</h4>
               <p className="text-gray-400 text-sm mt-1">
-                support@safeersafaagro.com
+                support@shifmarfoods.com
               </p>
             </div>
           </div>
 
           {/* PHONE */}
           <div className="flex items-start gap-4">
-            <div className="w-12 h-12 rounded-lg bg-[#D97706]/10 flex items-center justify-center">
-              <Phone className="w-5 h-5 text-[#D97706]" />
+            <div className="w-12 h-12 rounded-lg bg-[#3bb471]/10 flex items-center justify-center">
+              <Phone className="w-5 h-5 text-[#3bb471]" />
             </div>
             <div>
               <h4 className="font-medium">Phone</h4>
@@ -119,7 +119,7 @@ export default function ContactPage() {
               placeholder="Enter your requirement..."
             />
 
-            <button className="w-full bg-[#D97706] text-white py-3 rounded-md hover:opacity-90 transition">
+            <button className="w-full bg-[#3bb471] text-white py-3 rounded-md hover:opacity-90 transition">
               Submit Inquiry
             </button>
 

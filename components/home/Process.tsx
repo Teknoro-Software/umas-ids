@@ -49,17 +49,17 @@ export default function Process() {
                     >
 
                         {/* ICON */}
-                        <div className="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-[#D97706] text-white mb-6 group-hover:scale-110 transition">
+                        <div className="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-[#3bb471] text-white mb-6 group-hover:scale-110 transition">
                             <step.icon className="w-6 h-6" />
                         </div>
 
                         {/* STEP */}
-                        <p className="text-xs tracking-widest text-[#D97706] mb-2">
+                        <p className="text-xs tracking-widest text-[#3bb471] mb-2">
                             STEP {i + 1}
                         </p>
 
                         {/* CARD */}
-                        <div className="bg-[#262626] border border-[#333] p-6 rounded-xl hover:border-[#D97706] transition">
+                        <div className="bg-[#262626] border border-[#333] p-6 rounded-xl hover:border-[#3bb471] transition">
 
                             <h3 className="text-lg font-semibold text-white">
                                 {step.title}

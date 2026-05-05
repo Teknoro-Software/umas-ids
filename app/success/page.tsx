@@ -16,7 +16,7 @@ export default function SuccessPage() {
         <div className="relative bg-[#1B1B1B] min-h-screen flex items-center justify-center px-6 overflow-hidden text-white">
 
             {/* 🔥 GLOW */}
-            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#D97706]/10 blur-3xl rounded-full"></div>
+            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#3bb471]/10 blur-3xl rounded-full"></div>
 
             <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
@@ -30,9 +30,9 @@ export default function SuccessPage() {
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
                     transition={{ delay: 0.2, type: "spring" }}
-                    className="w-16 h-16 mx-auto mb-8 rounded-full bg-[#D97706]/10 flex items-center justify-center"
+                    className="w-16 h-16 mx-auto mb-8 rounded-full bg-[#3bb471]/10 flex items-center justify-center"
                 >
-                    <Check className="w-7 h-7 text-[#D97706]" />
+                    <Check className="w-7 h-7 text-[#3bb471]" />
                 </motion.div>
 
                 {/* TITLE */}
@@ -63,7 +63,7 @@ export default function SuccessPage() {
 
                     <button
                         onClick={() => router.push("/shop")}
-                        className="w-full bg-[#D97706] text-white py-3 rounded-md text-sm hover:opacity-90 transition"
+                        className="w-full bg-[#3bb471] text-white py-3 rounded-md text-sm hover:opacity-90 transition"
                     >
                         Browse More Products
                     </button>
